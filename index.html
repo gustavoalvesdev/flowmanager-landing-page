@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowManager - Gestão para Pequenos Negócios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Menu fixo -->
+  <header class="fixed w-full bg-white shadow z-50">
+	  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+		<!-- Logo -->
+		<img src="flow-logo.png" alt="FlowManager" class="h-10 w-auto">
+
+		<!-- Menu desktop -->
+		<nav class="hidden md:flex space-x-6">
+		  <a href="#sobre" class="hover:text-blue-500">Sobre</a>
+		  <a href="#modulos" class="hover:text-blue-500">Módulos</a>
+		  <a href="#faq" class="hover:text-blue-500">FAQ</a>
+		  <a href="#plano" class="hover:text-blue-500">Plano</a>
+		  <a href="#contato" class="hover:text-blue-500">Contato</a>
+		</nav>
+
+		<!-- Botão hamburguer -->
+		<button id="menu-btn" class="md:hidden focus:outline-none">
+		  <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+		  </svg>
+		</button>
+	  </div>
+
+	  <!-- Menu mobile -->
+	  <nav id="mobile-menu" class="overflow-hidden max-h-0 md:hidden bg-white px-6 transition-all duration-300">
+		<a href="#sobre" class="block py-2 hover:text-blue-500">Sobre</a>
+		<a href="#modulos" class="block py-2 hover:text-blue-500">Módulos</a>
+		<a href="#faq" class="block py-2 hover:text-blue-500">FAQ</a>
+		<a href="#plano" class="block py-2 hover:text-blue-500">Plano</a>
+		<a href="#contato" class="block py-2 hover:text-blue-500">Contato</a>
+	  </nav>
+	</header>
+
+  <!-- Hero -->
+  <section class="pt-24 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-20">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Domine a gestão do seu negócio em poucos cliques</h1>
+        <p class="text-gray-600 mb-6">O FlowManager foi criado para pequenos empreendedores que precisam de organização, clareza e controle total da sua empresa.</p>
+        <a href="#contato" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded shadow">Entrar em Contato Agora</a>
+        <p class="text-sm text-gray-500 mt-2">Sem burocracia. Suporte humano e direto.</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="screenshot1.PNG" alt="FlowManager Dashboard" class="rounded shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+      <h2 class="text-3xl font-bold mb-12">Por que escolher o FlowManager?</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <div class="flex items-center">
+            <div class="bg-blue-100 text-blue-500 p-3 rounded-full mr-4">💡</div>
+            <span class="font-semibold">Prático: Tudo em um só lugar, sem complicações.</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-blue-100 text-blue-500 p-3 rounded-full mr-4">⚡</div>
+            <span class="font-semibold">Rápido: Fluxo otimizado para você gastar tempo no que importa.</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-blue-100 text-blue-500 p-3 rounded-full mr-4">🔒</div>
+            <span class="font-semibold">Seguro: Dados protegidos com tecnologia de ponta.</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-blue-100 text-blue-500 p-3 rounded-full mr-4">🎯</div>
+            <span class="font-semibold">Feito para você: Pensado para MEIs, autônomos e pequenos negócios.</span>
+          </div>
+        </div>
+        <div>
+          <img src="screenshot2.PNG" alt="FlowManager Overview" class="rounded shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulos -->
+  <section id="modulos" class="bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">O que você pode fazer com o FlowManager?</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div class="text-blue-500 text-4xl mb-4">💰</div>
+          <h3 class="font-bold mb-2">Financeiro</h3>
+          <p>Controle de entradas, saídas e fluxo de caixa.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div class="text-blue-500 text-4xl mb-4">🛒</div>
+          <h3 class="font-bold mb-2">Clientes & Vendas</h3>
+          <p>Cadastre clientes, emita recibos e acompanhe vendas.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div class="text-blue-500 text-4xl mb-4">📦</div>
+          <h3 class="font-bold mb-2">Estoque</h3>
+          <p>Gerencie produtos e níveis de reposição.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+          <div class="text-blue-500 text-4xl mb-4">📊</div>
+          <h3 class="font-bold mb-2">Relatórios Inteligentes</h3>
+          <p>Gráficos simples que mostram a saúde do seu negócio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-12">Quem já usa, recomenda:</h2>
+      <div class="bg-gray-50 p-8 rounded shadow-md">
+        <p class="italic text-gray-700 mb-4">“Depois que comecei a usar o FlowManager, nunca mais fiquei perdido com as contas da minha loja. É simples e direto, perfeito para quem não tem tempo a perder.”</p>
+        <span class="font-bold">— João, dono de minimercado</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-gray-50 py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">Perguntas Frequentes</h2>
+      <div class="space-y-4">
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">Preciso de conhecimento técnico?</summary>
+          <p class="mt-2 text-gray-600">Não, é tudo intuitivo.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">Tenho suporte?</summary>
+          <p class="mt-2 text-gray-600">Sim, suporte humano via WhatsApp.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">Posso testar antes de contratar?</summary>
+          <p class="mt-2 text-gray-600">Entre em contato e receba uma demonstração gratuita.</p>
+        </details>
+        <details class="bg-white p-4 rounded shadow">
+          <summary class="font-semibold cursor-pointer">É seguro?</summary>
+          <p class="mt-2 text-gray-600">Sim, usamos criptografia e servidores de alto nível.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plano -->
+  <section id="plano" class="bg-blue-50 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Um único plano, tudo incluso.</h2>
+      <p class="text-gray-700 mb-6">R$ XX,XX / mês</p>
+      <ul class="text-gray-700 mb-6 space-y-2">
+        <li>✔ Todos os módulos</li>
+        <li>✔ Suporte dedicado</li>
+        <li>✔ Atualizações automáticas</li>
+        <li>✔ Sem taxas escondidas</li>
+      </ul>
+      <a href="#contato" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded shadow">Entrar em Contato Agora</a>
+      <p class="text-sm text-gray-500 mt-2">Vagas limitadas na versão de lançamento.</p>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Pronto para transformar sua gestão?</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nome" class="w-full p-3 border border-gray-300 rounded">
+        <input type="email" placeholder="E-mail" class="w-full p-3 border border-gray-300 rounded">
+        <input type="tel" placeholder="WhatsApp" class="w-full p-3 border border-gray-300 rounded">
+        <textarea placeholder="Mensagem" class="w-full p-3 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded shadow">Enviar Agora</button>
+      </form>
+      <p class="text-sm text-gray-500 mt-2">Fale direto com nossa equipe, sem filas e sem enrolação.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-100 py-6 mt-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-600">
+      <span>© 2025 FlowManager. Todos os direitos reservados.</span>
+      <div class="space-x-4 mt-2 md:mt-0">
+        <a href="#sobre" class="hover:text-blue-500">Sobre</a>
+        <a href="#modulos" class="hover:text-blue-500">Módulos</a>
+        <a href="#faq" class="hover:text-blue-500">FAQ</a>
+        <a href="#plano" class="hover:text-blue-500">Plano</a>
+        <a href="#contato" class="hover:text-blue-500">Contato</a>
+      </div>
+    </div>
+  </footer>
+		
+  <script>
+	  const btn = document.getElementById('menu-btn');
+	  const menu = document.getElementById('mobile-menu');
+
+	  btn.addEventListener('click', () => {
+		if(menu.classList.contains('max-h-0')){
+		  menu.classList.remove('max-h-0');
+		  menu.classList.add('max-h-screen');
+		} else {
+		  menu.classList.remove('max-h-screen');
+		  menu.classList.add('max-h-0');
+		}
+	  });
+	</script>
+</body>
+</html>
